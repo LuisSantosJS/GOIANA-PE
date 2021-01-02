@@ -2,9 +2,11 @@ import React from 'react';
 import {
     View,
     Text,
-    ScrollView
+    ScrollView,
+    TouchableOpacity
 } from 'react-native';
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
 import FastImage from 'react-native-fast-image'
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 //@ts-ignore
@@ -24,6 +26,7 @@ import Logo from '../../assets/logo.png'
 //@ts-ignore
 import Chapeu from '../../assets/chapeu.png'
 const Municipio: React.FC = () => {
+    const navigation = useNavigation();
     return (
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
@@ -42,17 +45,17 @@ const Municipio: React.FC = () => {
                     <Text style={styles.textCilindro}>Conheça mais sobre nosso município.</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
-                    <View style={{flex: 1, alignItems:'center'}}>
+                    <View style={{ flex: 1, alignItems: 'center' }}>
                         <View style={styles.rowBolinhas}>
-                            <View style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Cidade')} activeOpacity={0.7} style={styles.bolinhas}>
                                 <FastImage source={CidadeLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('Historia')} activeOpacity={0.7} style={styles.bolinhas}>
                                 <FastImage source={HistoriaLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('Geografia')} activeOpacity={0.7} style={styles.bolinhas}>
                                 <FastImage source={GeoLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
+                            </TouchableOpacity>
                         </View>
                         <View style={styles.roWNOmesBolina}>
                             <Text style={styles.textBolinas}>
@@ -67,15 +70,15 @@ const Municipio: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <View style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Demografia')} activeOpacity={0.7} style={styles.bolinhas}>
                                 <FastImage source={DemoLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('Politica')} activeOpacity={0.7} style={styles.bolinhas}>
                                 <FastImage source={PoliLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('Guias')} activeOpacity={0.7} style={styles.bolinhas}>
                                 <FastImage source={TelefoneLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
+                            </TouchableOpacity>
                         </View>
                         <View style={styles.roWNOmesBolina}>
                             <Text style={styles.textBolinas}>
