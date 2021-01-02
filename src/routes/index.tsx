@@ -15,6 +15,7 @@ import Historia from '../pages/Municipio/Historia'
 import Geografia from '../pages/Municipio/Geografia'
 import Demografia from '../pages/Municipio/Demografia'
 import Politica from '../pages/Municipio/Politica'
+import WebViewPage from '../pages/WebView'
 const Stack = createStackNavigator();
 const Router: React.FC = () => {
 
@@ -59,6 +60,14 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Geografia} />
+
+                <Stack.Screen name="WeView" options={{
+                    headerShown: true,
+                    title: 'Navegador',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={WebViewPage} />
 
                 <Stack.Screen name="Demografia" options={{
                     headerShown: true,
