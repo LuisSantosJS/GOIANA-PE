@@ -7,7 +7,7 @@ interface Props {
     route: { params: { url: string } }
 }
 const WebViewPage: React.FC<Props> = (props) => {
-    const [loading, setLoading] = useState<boolean>(true)
+    const [loading, setLoading] = useState<boolean>(false)
     return (
         <>
             <View style={styles.container} >
@@ -23,7 +23,7 @@ const WebViewPage: React.FC<Props> = (props) => {
                     onLoadStart={() => setLoading(true)}
                     onLoad={() => setLoading(false)}
                     onLoadEnd={() => setLoading(false)}
-                    source={{ uri: props.route.params.url || 'www.google.com' }}
+                    source={{ uri: props.route.params.url }}
                 />
             </View>
         </>

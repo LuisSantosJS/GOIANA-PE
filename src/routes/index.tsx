@@ -61,7 +61,7 @@ const Router: React.FC = () => {
                     headerTitleStyle: { color: 'white' }
                 }} component={Geografia} />
 
-                <Stack.Screen name="WeView" options={{
+                <Stack.Screen name="WebViewPage" options={{
                     headerShown: true,
                     title: 'Navegador',
                     headerBackTitleVisible: false,
