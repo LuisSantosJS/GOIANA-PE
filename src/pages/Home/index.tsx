@@ -6,11 +6,12 @@ import {
     Text,
     TouchableOpacity
 } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native'
 import FastImage from 'react-native-fast-image'
 //@ts-ignore
 import Logo from '../../assets/logo.png'
 const Home: React.FC = () => {
+    const navigation = useNavigation();
     return (
         <>
 
@@ -29,13 +30,13 @@ const Home: React.FC = () => {
                         Olá, seja bem vindo, o que
                         você deseja explorar em goiana?
                     </Text>
-                    <TouchableOpacity activeOpacity={0.7} style={styles.buttons}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Municipio')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Município</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.7} style={styles.buttons}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Cultura')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Cultura</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.7} style={styles.buttons}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Telefones')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Telefones</Text>
                     </TouchableOpacity>
                 </View>
