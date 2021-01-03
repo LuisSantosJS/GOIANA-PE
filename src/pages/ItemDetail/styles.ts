@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     banner:{
-        width: '90%',
-        height: '50%'
+        width: '100%',
+        height: '45.4%'
     },
     text:{
         width:'85%',
@@ -22,6 +22,14 @@ const styles = StyleSheet.create({
         color:'#707070',
         fontSize: width*0.045
 
+    },
+    textTitle:{
+        width:'85%',
+        textAlign:'center',
+        color:'#707070',
+        fontWeight: '700',
+        fontSize: width*0.05,
+        padding: 10
     },
     mais: {
         width: width * 0.4,

@@ -2,11 +2,15 @@ import React from 'react';
 import {
     View,
     Text,
-    ScrollView
+    ScrollView,
+    TouchableOpacity
 } from 'react-native';
 import styles from './styles'
 import FastImage from 'react-native-fast-image'
+import { useNavigation } from '@react-navigation/native'
 import { getStatusBarHeight } from 'react-native-status-bar-height';
+//@ts-ignore
+import Arrow from '../../assets/arrow.png'
 //@ts-ignore
 import CablocoLogo from '../../assets/cabloco.png'
 //@ts-ignore
@@ -30,6 +34,10 @@ import Logo from '../../assets/logo.png'
 //@ts-ignore
 import Chapeu from '../../assets/chapeu.png'
 const Cultura: React.FC = () => {
+    const navigation = useNavigation();
+    const handleBack = () => {
+        navigation.goBack();
+    }
     return (
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
@@ -47,7 +55,7 @@ const Cultura: React.FC = () => {
                 <View style={styles.cilindro}>
                     <Text style={styles.textCilindro}>Conheça Goiana</Text>
                 </View>
-                <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}  style={{ flex: 1 }}>
+                <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <View style={styles.rowBolinhas}>
                             <View style={styles.bolinhas}>
@@ -124,6 +132,9 @@ const Cultura: React.FC = () => {
                 </ScrollView>
             </View>
             <View style={styles.minBorder} />
+            <TouchableOpacity onPress={handleBack} activeOpacity={0.7} style={styles.backbutton}>
+                <FastImage source={Arrow} resizeMode={FastImage.resizeMode.contain} style={styles.arrow} />
+            </TouchableOpacity>
         </>
     )
 }

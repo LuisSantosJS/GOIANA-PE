@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Dimensions } from 'react-native';
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 const styles = StyleSheet.create({
@@ -65,32 +66,47 @@ const styles = StyleSheet.create({
         height: width * 0.23,
         borderRadius: (width * 0.23) / 2,
         backgroundColor: 'white',
-        alignItems:'center',
-        justifyContent:'center',
+        alignItems: 'center',
+        justifyContent: 'center',
         borderWidth: 1,
-        borderColor:'#4A0201'
+        borderColor: '#4A0201'
     },
-    bolinhasIMages:{
+    bolinhasIMages: {
         width: width * 0.14,
         height: width * 0.14
     },
-    roWNOmesBolina:{
+    roWNOmesBolina: {
         width: '90%',
-        height: width*0.09,
+        height: width * 0.09,
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center'
     },
-    textBolinas:{
+    textBolinas: {
         width: '30%',
-        textAlign:'center',
-        color:'#707070',
-        fontSize: width*0.045
+        textAlign: 'center',
+        color: '#707070',
+        fontSize: width * 0.045
     },
     minBorder: {
         backgroundColor: '#4A0201',
         width: width,
         height: 15
+    },
+    backbutton: {
+        position: 'absolute',
+        width: width * 0.12,
+        height: width * 0.12,
+        borderRadius: (width * 0.12) / 2,
+        backgroundColor: 'white',
+        top: Number(width * 0.04 + getStatusBarHeight(true)),
+        left: width * 0.04,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    arrow:{
+        width: width*0.06,
+        height: width*0.06
     }
 });
 export default styles;

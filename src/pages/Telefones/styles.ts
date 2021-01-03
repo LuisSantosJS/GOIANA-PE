@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Dimensions } from 'react-native';
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 const styles = StyleSheet.create({
@@ -95,6 +96,21 @@ const styles = StyleSheet.create({
         backgroundColor: '#4A0201',
         width: width,
         height: 15
+    },
+    backbutton: {
+        position: 'absolute',
+        width: width * 0.12,
+        height: width * 0.12,
+        borderRadius: (width * 0.12) / 2,
+        backgroundColor: 'white',
+        top: Number(width * 0.04 + getStatusBarHeight(true)),
+        left: width * 0.04,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    arrow:{
+        width: width*0.06,
+        height: width*0.06
     }
 });
 export default styles;

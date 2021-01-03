@@ -5,18 +5,20 @@ import {
     ScrollView,
     TouchableOpacity
 } from 'react-native';
+import Toast from 'react-native-simple-toast';
 import styles from './styles'
 import { useNavigation } from '@react-navigation/native'
 import FastImage from 'react-native-fast-image'
 import { getStatusBarHeight } from 'react-native-status-bar-height';
+//@ts-ignore
+import Arrow from '../../assets/arrow.png'
 //@ts-ignore
 import HoteisLogo from '../../assets/hoteis.png'
 //@ts-ignore
 import TelefoneLogo from '../../assets/telefone.png'
 //@ts-ignore
 import Delivery from '../../assets/delivery.png'
-//@ts-ignore
-import PoliLogo from '../../assets/poli.png'
+
 //@ts-ignore
 import LancheLogo from '../../assets/lanche.png'
 //@ts-ignore
@@ -27,6 +29,13 @@ import Logo from '../../assets/logo.png'
 import Chapeu from '../../assets/chapeu.png'
 const Telefones: React.FC = () => {
     const navigation = useNavigation();
+    const handleBack = () =>{
+        navigation.goBack();
+    }
+
+    const notAction = () =>{
+        Toast.showWithGravity('Funcionalidade indisponível', Toast.LONG, Toast.TOP);
+    }
     return (
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
@@ -53,7 +62,7 @@ const Telefones: React.FC = () => {
                             <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Restaurantes')} style={styles.bolinhas}>
                                 <FastImage source={EatLogo} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity activeOpacity={0.7} onPress={() => { }} style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={styles.bolinhas}>
                                 <FastImage source={LancheLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
@@ -70,9 +79,9 @@ const Telefones: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <View style={[styles.bolinhas]}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={styles.bolinhas}>
                                 <FastImage source={Delivery} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
+                            </TouchableOpacity>
                             <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Guias')} style={styles.bolinhas}>
                                 <FastImage source={TelefoneLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
@@ -92,6 +101,9 @@ const Telefones: React.FC = () => {
                 </ScrollView>
             </View>
             <View style={styles.minBorder} />
+            <TouchableOpacity onPress={handleBack} activeOpacity={0.7} style={styles.backbutton}>
+                <FastImage source={Arrow} resizeMode={FastImage.resizeMode.contain} style={styles.arrow} />
+            </TouchableOpacity>
         </>
     )
 }

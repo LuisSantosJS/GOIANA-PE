@@ -10,6 +10,8 @@ import { useNavigation } from '@react-navigation/native'
 import FastImage from 'react-native-fast-image'
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 //@ts-ignore
+import Arrow from '../../assets/arrow.png'
+//@ts-ignore
 import CidadeLogo from '../../assets/predio.png'
 //@ts-ignore
 import TelefoneLogo from '../../assets/telefone.png'
@@ -27,6 +29,9 @@ import Logo from '../../assets/logo.png'
 import Chapeu from '../../assets/chapeu.png'
 const Municipio: React.FC = () => {
     const navigation = useNavigation();
+    const handleBack = () =>{
+        navigation.goBack();
+    }
     return (
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
@@ -95,6 +100,9 @@ const Municipio: React.FC = () => {
                 </ScrollView>
             </View>
             <View style={styles.minBorder} />
+            <TouchableOpacity onPress={handleBack} activeOpacity={0.7} style={styles.backbutton}>
+                <FastImage source={Arrow} resizeMode={FastImage.resizeMode.contain} style={styles.arrow} />
+            </TouchableOpacity>
         </>
     )
 }

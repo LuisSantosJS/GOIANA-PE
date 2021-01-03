@@ -2,18 +2,25 @@ import React from 'react';
 import {
     View,
     FlatList,
-    Text
+    Text,
+    TouchableOpacity
 } from 'react-native';
 import { Restaurante, RestauranteMocks } from '../../../mocks/restaurantes'
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
 import FastImage from 'react-native-fast-image';
 //@ts-ignore
 import DiaLogo from '../../../assets/dia.png'
 const Restaurantes: React.FC = () => {
+    const navigation = useNavigation()
+    const handleDetail = (item: Restaurante) => {
+        //ItemDetail
+        navigation.navigate('ItemDetail', item)
+    }
 
     const _renderItem = (item: Restaurante, index: number) => {
         return (
-            <View key={index} style={styles.itemContainer}>
+            <TouchableOpacity onPress={() => handleDetail(item)} activeOpacity={0.7} key={index} style={styles.itemContainer}>
                 <View style={styles.itemView}>
                     <FastImage source={item.image} resizeMode={FastImage.resizeMode.contain} style={styles.itemIMG} />
                     <View style={styles.columnTextView}>
@@ -26,7 +33,7 @@ const Restaurantes: React.FC = () => {
                         </View>
                     </View>
                 </View>
-            </View>
+            </TouchableOpacity>
         )
     }
     return (

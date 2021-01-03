@@ -18,7 +18,7 @@ const Cidade: React.FC = () => {
     }
     return (
         <>
-            <ScrollView>
+            <ScrollView  style={{ backgroundColor: '#FFFFFF' }} >
                 <View style={styles.container}>
                     <FastImage source={CidadeLogo} resizeMode={FastImage.resizeMode.contain} style={styles.logo} />
                     <View style={styles.separate} />
@@ -51,6 +51,7 @@ const Cidade: React.FC = () => {
                     <View style={styles.separate} />
                     <View style={styles.separate} />
                 </View>
+                <View style={{ ...styles.separate, height: 200 }} />
             </ScrollView>
         </>
     )

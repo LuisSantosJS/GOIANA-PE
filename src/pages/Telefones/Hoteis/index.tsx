@@ -2,18 +2,26 @@ import React from 'react';
 import {
     View,
     FlatList,
-    Text
+    Text,
+    TouchableOpacity
 } from 'react-native';
 import { HoteisMocks, Hotels } from '../../../mocks/hoteis'
 import styles from './styles'
+import {useNavigation} from '@react-navigation/native'
 import FastImage from 'react-native-fast-image';
 //@ts-ignore
 import DiaLogo from '../../../assets/dia.png'
 const Hoteis: React.FC = () => {
+    const navigation = useNavigation()
+
+    const handleDetail = (item: Hotels) =>{
+        //ItemDetail
+        navigation.navigate('ItemDetail', item)
+    }
 
     const _renderItem = (item: Hotels, index: number) => {
         return (
-            <View key={index} style={styles.itemContainer}>
+            <TouchableOpacity activeOpacity={0.7} onPress={()=> handleDetail(item)} key={index} style={styles.itemContainer}>
                 <View style={styles.itemView}>
                     <FastImage source={item.image} resizeMode={FastImage.resizeMode.contain} style={styles.itemIMG} />
                     <View style={styles.columnTextView}>
@@ -26,7 +34,7 @@ const Hoteis: React.FC = () => {
                         </View>
                     </View>
                 </View>
-            </View>
+            </TouchableOpacity>
         )
     }
     return (
