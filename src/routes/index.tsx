@@ -4,12 +4,15 @@ import { StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../pages/Home'
+import Heroinas from '../pages/Cultura/Heroinas'
+import Artesao from '../pages/Cultura/Artesao'
 import Municipio from '../pages/Municipio'
 import Cultura from '../pages/Cultura'
 import Telefones from '../pages/Telefones'
 import Hoteis from '../pages/Telefones/Hoteis'
 import Restaurantes from '../pages/Telefones/Restaurante'
 import Guias from '../pages/Telefones/Guia'
+import Caboclo from '../pages/Cultura/Caboclo'
 import Cidade from '../pages/Municipio/Cidade'
 import Historia from '../pages/Municipio/Historia'
 import Geografia from '../pages/Municipio/Geografia'
@@ -17,6 +20,11 @@ import Demografia from '../pages/Municipio/Demografia'
 import Politica from '../pages/Municipio/Politica'
 import WebViewPage from '../pages/WebView'
 import ItemDetail from '../pages/ItemDetail'
+import Aparaua from '../pages/Cultura/Aparaura';
+import Musical from '../pages/Cultura/Musical';
+import Religioso from '../pages/Cultura/Religioso';
+import Rural from '../pages/Cultura/Rural';
+import Praia from '../pages/Cultura/Praia';
 const Stack = createStackNavigator();
 const Router: React.FC = () => {
 
@@ -46,6 +54,14 @@ const Router: React.FC = () => {
                     headerTitleStyle: { color: 'white' }
                 }} component={Historia} />
 
+                <Stack.Screen name="Praia" options={{
+                    headerShown: true,
+                    title: 'Praias',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Praia} />
+
                 <Stack.Screen name="Politica" options={{
                     headerShown: true,
                     title: 'Política',
@@ -53,6 +69,56 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Politica} />
+
+                <Stack.Screen name="Caboclo" options={{
+                    headerShown: true,
+                    title: 'Caboclinhos e Índios',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Caboclo} />
+
+                <Stack.Screen name="Religioso" options={{
+                    headerShown: true,
+                    title: 'Turismo Religioso',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Religioso} />
+
+
+                <Stack.Screen name="Artesao" options={{
+                    headerShown: true,
+                    title: 'Artesãos Goianenses',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Artesao} />
+
+
+                <Stack.Screen name="Rural" options={{
+                    headerShown: true,
+                    title: 'Turismo rural',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Rural} />
+
+                <Stack.Screen name="Musical" options={{
+                    headerShown: true,
+                    title: 'Sociedade Musical Curica',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Musical} />
+
+                <Stack.Screen name="Aparaua" options={{
+                    headerShown: true,
+                    title: 'Aparauá',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Aparaua} />
 
                 <Stack.Screen name="Geografia" options={{
                     headerShown: true,
@@ -105,6 +171,14 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Restaurantes} />
+
+                <Stack.Screen name="Heroinas" options={{
+                    headerShown: true,
+                    title: 'Heroínas de Tejucupapo',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Heroinas} />
 
                 <Stack.Screen name="Guias" options={{
                     headerShown: true,

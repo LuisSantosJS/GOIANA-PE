@@ -58,15 +58,15 @@ const Cultura: React.FC = () => {
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <View style={styles.rowBolinhas}>
-                            <View style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Caboclo')} style={styles.bolinhas}>
                                 <FastImage source={CablocoLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Heroinas')} style={styles.bolinhas}>
                                 <FastImage source={HeroiLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Aparaua')} style={styles.bolinhas}>
                                 <FastImage source={AparaLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
+                            </TouchableOpacity>
                         </View>
                         <View style={styles.roWNOmesBolina}>
                             <Text style={styles.textBolinas}>
@@ -82,15 +82,15 @@ const Cultura: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <View style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Musical')} style={styles.bolinhas}>
                                 <FastImage source={CuricaLogo} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Religioso')} style={styles.bolinhas}>
                                 <FastImage source={TurismoLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Rural')} style={styles.bolinhas}>
                                 <FastImage source={TurismoRuralLogo} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
+                            </TouchableOpacity>
                         </View>
                         <View style={styles.roWNOmesBolina}>
                             <Text style={styles.textBolinas}>
@@ -109,12 +109,12 @@ const Cultura: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <View style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Praia')} style={styles.bolinhas}>
                                 <FastImage source={PraiaLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
-                            <View style={styles.bolinhas}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Artesao')} style={styles.bolinhas}>
                                 <FastImage source={ArteLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
-                            </View>
+                            </TouchableOpacity>
                             <View style={{ ...styles.bolinhas, borderWidth: 0 }} />
 
                         </View>
