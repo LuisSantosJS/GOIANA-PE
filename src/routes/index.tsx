@@ -32,7 +32,7 @@ const Router: React.FC = () => {
 
         <NavigationContainer>
             <StatusBar backgroundColor='#4A0201' barStyle='light-content' />
-            <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Navigator screenOptions={{ headerShown: false, headerBackTitleStyle: { color: 'white' },headerTintColor:'white' }}>
 
                 <Stack.Screen name="Home" component={Home} />
 

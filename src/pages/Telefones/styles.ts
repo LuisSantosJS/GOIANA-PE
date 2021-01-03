@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Dimensions } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
@@ -86,11 +86,18 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center'
     },
-    textBolinas:{
+    textBolinas: {
         width: '30%',
-        textAlign:'center',
-        color:'#707070',
-        fontSize: width*0.045
+        textAlign: 'center',
+        color: '#707070',
+        fontFamily: 'Poppins-Regular',
+        fontSize: width * 0.045
+    },
+    sombra: {
+        shadowOffset: Platform.OS === 'android' ? { width: 0, height: 0 } : { width: 4, height: 4 },
+        shadowColor: 'rgba(0,0,0,0.4)',
+        shadowOpacity: Platform.OS === 'android' ? 0 : 1.0,
+        elevation: Platform.OS === 'android' ? 0 : 1
     },
     minBorder: {
         backgroundColor: '#4A0201',

@@ -56,16 +56,17 @@ const Telefones: React.FC = () => {
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Hoteis')} style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Hoteis')} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={HoteisLogo} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Restaurantes')} style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Restaurantes')} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={EatLogo} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={LancheLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
+                        <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Hotéis
@@ -79,15 +80,16 @@ const Telefones: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={Delivery} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Guias')} style={styles.bolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Guias')} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={TelefoneLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                             <View style={{ ...styles.bolinhas, borderWidth: 0 }} />
 
                         </View>
+                        <View style={{padding: 10}}/>
                         <View style={{ ...styles.roWNOmesBolina }}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Delivery
@@ -97,6 +99,8 @@ const Telefones: React.FC = () => {
                             </Text>
                             <Text style={styles.textBolinas} />
                         </View>
+                        <View style={{padding: 10}}/>
+                        <View style={{padding: 10}}/>
                     </View>
                 </ScrollView>
             </View>

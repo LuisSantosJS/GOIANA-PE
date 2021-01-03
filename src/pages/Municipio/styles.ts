@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Dimensions } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'flex-end'
     },
+
     bolinhas: {
         width: width * 0.23,
         height: width * 0.23,
@@ -86,7 +87,14 @@ const styles = StyleSheet.create({
         width: '30%',
         textAlign: 'center',
         color: '#707070',
+        fontFamily: 'Poppins-Regular',
         fontSize: width * 0.045
+    },
+    sombra: {
+        shadowOffset: Platform.OS === 'android' ? { width: 0, height: 0 } : { width: 4, height: 4 },
+        shadowColor: 'rgba(0,0,0,0.4)',
+        shadowOpacity: Platform.OS === 'android' ? 0 : 1.0,
+        elevation: Platform.OS === 'android' ? 0 : 1
     },
     minBorder: {
         backgroundColor: '#4A0201',
@@ -101,12 +109,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         top: Number(width * 0.04 + getStatusBarHeight(true)),
         left: width * 0.04,
-        alignItems:'center',
-        justifyContent:'center'
+        alignItems: 'center',
+        justifyContent: 'center'
     },
-    arrow:{
-        width: width*0.06,
-        height: width*0.06
+    arrow: {
+        width: width * 0.06,
+        height: width * 0.06
     }
 });
 export default styles;

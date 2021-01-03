@@ -52,16 +52,17 @@ const Municipio: React.FC = () => {
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity onPress={() => navigation.navigate('Cidade')} activeOpacity={0.7} style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Cidade')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={CidadeLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={() => navigation.navigate('Historia')} activeOpacity={0.7} style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Historia')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={HistoriaLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={() => navigation.navigate('Geografia')} activeOpacity={0.7} style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Geografia')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={GeoLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
+                        <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
                             <Text style={styles.textBolinas}>
                                 A cidade
@@ -75,16 +76,17 @@ const Municipio: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity onPress={() => navigation.navigate('Demografia')} activeOpacity={0.7} style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Demografia')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={DemoLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={() => navigation.navigate('Politica')} activeOpacity={0.7} style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Politica')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={PoliLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={() => navigation.navigate('Guias')} activeOpacity={0.7} style={styles.bolinhas}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Guias')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={TelefoneLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
+                        <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
                             <Text style={styles.textBolinas}>
                                 Demografia
@@ -96,6 +98,8 @@ const Municipio: React.FC = () => {
                                 Telefones Úteis
                             </Text>
                         </View>
+                        <View style={{padding: 10}}/>
+                        <View style={{padding: 10}}/>
                     </View>
                 </ScrollView>
             </View>
