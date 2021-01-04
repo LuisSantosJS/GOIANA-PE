@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     },
     textCilindro: {
         color: 'white',
+        textAlign:'center',
         fontSize: width * 0.045
     },
     rowBolinhas: {
@@ -73,10 +74,10 @@ const styles = StyleSheet.create({
 
     },
     sombra: {
-        shadowOffset: Platform.OS === 'android' ? { width: 0, height: 0 } : { width: 4, height: 4 },
-        shadowColor: 'rgba(0,0,0,0.4)',
-        shadowOpacity: Platform.OS === 'android' ? 0 : 1.0,
-        elevation: Platform.OS === 'android' ? 0 : 1
+        // shadowOffset: Platform.OS === 'android' ? { width: 0, height: 0 } : { width: 4, height: 4 },
+        // shadowColor: 'rgba(0,0,0,0.4)',
+        // shadowOpacity: Platform.OS === 'android' ? 0 : 1.0,
+        // elevation: Platform.OS === 'android' ? 0 : 1
     },
     bolinhasIMages: {
         width: width * 0.2,

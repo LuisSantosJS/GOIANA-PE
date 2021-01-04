@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     wellTRext: {
         width: '70%',
         padding: 10,
-        textAlign: 'center',
+        textAlign: 'justify',
         fontWeight: '700',
         fontSize: width * 0.045,
         color: '#707070'
@@ -94,10 +94,10 @@ const styles = StyleSheet.create({
         fontSize: width * 0.045
     },
     sombra: {
-        shadowOffset: Platform.OS === 'android' ? { width: 0, height: 0 } : { width: 4, height: 4 },
-        shadowColor: 'rgba(0,0,0,0.4)',
-        shadowOpacity: Platform.OS === 'android' ? 0 : 1.0,
-        elevation: Platform.OS === 'android' ? 0 : 1
+    //     shadowOffset: Platform.OS === 'android' ? { width: 0, height: 0 } : { width: 4, height: 4 },
+    //     shadowColor: 'rgba(0,0,0,0.4)',
+    //     shadowOpacity: Platform.OS === 'android' ? 0 : 1.0,
+    //     elevation: Platform.OS === 'android' ? 0 : 1
     },
     minBorder: {
         backgroundColor: '#4A0201',

@@ -9,7 +9,7 @@ interface Caboclos {
 const Cabo: Caboclos[] = [
     {
         title: 'Caboclinhos Cahetes de Goiana',
-        description: 'São muitas as razões para que os pernambucanos tenham orgulho de sua história, e entre esses motivos podemos mencionar o município de Goiana e suas muitas tradições culturais. Recentemente tem crescido, entre os Goianenses, a compreensão da riqueza de sua cultura, uma cultura criada ao longo da trajetória histórica da ...',
+        description: 'O Caboclinhos Cahetés de Goiana foi fundado por José de Melo e João Marinho, em 15 de dezembro de 1904. A denominação faz referência à Tribo Cahetés que, segundo os moradores mais antigos, existia no município de Goiana. A agremiação é herança familiar e quem a conduz atualmente é Pedro Gonçalves Ramos, que assumiu o grupo em 1960, quando tinha apenas 14 anos...',
         image: require('../../assets/Cabo/caboclo.png'),
         url: 'https://goianape.com.br/caboclinhos-cahetes-de-goiana-2/'
     },

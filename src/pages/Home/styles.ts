@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Dimensions } from 'react-native';
+import { getStatusBarHeight } from 'react-native-status-bar-height'
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 const styles = StyleSheet.create({
@@ -63,6 +64,22 @@ const styles = StyleSheet.create({
         padding: 10,
         textAlign: 'center',
         fontWeight: '600'
+    },
+    floats: {
+        position: 'absolute',
+        top: width * 0.07+ getStatusBarHeight(true),
+        backgroundColor:'#4A0201',
+        width: width*0.1,
+        height: width*0.1,
+        borderRadius: width*0.05,
+        left: width - width*0.13,
+        alignItems:'center',
+        justifyContent:'center'
+        
+    },
+    info:{
+        width:'50%',
+        height: '50%'
     }
 });
 export default styles;

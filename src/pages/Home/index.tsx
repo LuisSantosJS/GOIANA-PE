@@ -7,7 +7,10 @@ import {
     TouchableOpacity
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
+//@ts-ignore
+import IconInfo from '../../assets/reclamar.png'
 import FastImage from 'react-native-fast-image'
+
 //@ts-ignore
 import Logo from '../../assets/logo.png'
 const Home: React.FC = () => {
@@ -27,14 +30,14 @@ const Home: React.FC = () => {
                 </View>
                 <View style={styles.viewrest}>
                     <Text style={styles.textWellcome}>
-                        Olá, seja bem vindo, o que
+                        Olá, seja bem vindo(a), o que
                         você deseja explorar em goiana?
                     </Text>
                     <TouchableOpacity onPress={() => navigation.navigate('Municipio')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Município</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Cultura')} activeOpacity={0.7} style={styles.buttons}>
-                        <Text style={styles.textButtons}>Cultura</Text>
+                        <Text style={styles.textButtons}>Turismo e Cultura</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Telefones')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Telefones</Text>
@@ -42,6 +45,9 @@ const Home: React.FC = () => {
                 </View>
             </View>
             <View style={styles.minBorder} />
+            <TouchableOpacity activeOpacity={0.7} onPress={()=> navigation.navigate('Contato')} style={styles.floats}>
+                <FastImage source={IconInfo} resizeMode={FastImage.resizeMode.contain} style={styles.info} />
+            </TouchableOpacity>
         </>
     )
 }

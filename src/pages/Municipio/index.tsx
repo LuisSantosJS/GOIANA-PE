@@ -52,7 +52,7 @@ const Municipio: React.FC = () => {
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity onPress={() => navigation.navigate('Cidade')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
+                            <TouchableOpacity  onPress={() => navigation.navigate('Cidade')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={CidadeLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => navigation.navigate('Historia')} activeOpacity={0.7} style={[styles.bolinhas, styles.sombra]}>
@@ -64,13 +64,13 @@ const Municipio: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 A cidade
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Historia
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Geografia
                             </Text>
                         </View>
@@ -88,10 +88,10 @@ const Municipio: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Demografia
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Política
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>

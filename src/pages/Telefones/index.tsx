@@ -46,8 +46,7 @@ const Telefones: React.FC = () => {
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>
-                        Olá, seja bem vindo ao nosso
-                        portal de turismo <Text style={{ color: '#191919' }}>Goianense</Text>.
+                    Olá ! Aqui você encontra os melhores locais e serviços de nossa cidade.
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
@@ -68,7 +67,7 @@ const Telefones: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text numberOfLines={2} style={styles.textBolinas}>
+                            <Text  numberOfLines={2} style={styles.textBolinas}>
                                 Hotéis
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>

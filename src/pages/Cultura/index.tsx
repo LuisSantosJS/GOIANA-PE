@@ -16,7 +16,7 @@ import CablocoLogo from '../../assets/cabloco.png'
 //@ts-ignore
 import HeroiLogo from '../../assets/heroi.png'
 //@ts-ignore
-import CuricaLogo from '../../assets/curica.png'
+import CuricaLogo from '../../assets/saxo.png'
 //@ts-ignore
 import PoliLogo from '../../assets/poli.png'
 //@ts-ignore
@@ -47,13 +47,12 @@ const Cultura: React.FC = () => {
                 </View>
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
-                    <Text style={styles.wellTRext}>
-                        Olá, seja bem vindo ao nosso
-                        portal de turismo <Text style={{ color: '#191919' }}>Goianense</Text>.
+                    <Text style={{...styles.wellTRext, textAlign:'justify'}}>
+                    Olá ! Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
-                    <Text style={styles.textCilindro}>Conheça Goiana</Text>
+                    <Text style={styles.textCilindro}>Olá, Conheça Goiania!</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
@@ -70,14 +69,14 @@ const Cultura: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Caboclinhos
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Heroínas de
                                 tejucupapo
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Aparauá
                             </Text>
                         </View>
@@ -95,11 +94,11 @@ const Cultura: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Curica
                                 saboeira
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Turismo
                                 religioso
 
@@ -122,10 +121,10 @@ const Cultura: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Praias
                             </Text>
-                            <Text style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Artesãos
                                 goianenses
                             </Text>

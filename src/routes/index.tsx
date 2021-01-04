@@ -25,6 +25,7 @@ import Musical from '../pages/Cultura/Musical';
 import Religioso from '../pages/Cultura/Religioso';
 import Rural from '../pages/Cultura/Rural';
 import Praia from '../pages/Cultura/Praia';
+import Contato from '../pages/Contato'
 const Stack = createStackNavigator();
 const Router: React.FC = () => {
 
@@ -32,7 +33,7 @@ const Router: React.FC = () => {
 
         <NavigationContainer>
             <StatusBar backgroundColor='#4A0201' barStyle='light-content' />
-            <Stack.Navigator screenOptions={{ headerShown: false, headerBackTitleStyle: { color: 'white' },headerTintColor:'white' }}>
+            <Stack.Navigator screenOptions={{ headerShown: false, headerBackTitleStyle: { color: 'white' }, headerTintColor: 'white' }}>
 
                 <Stack.Screen name="Home" component={Home} />
 
@@ -45,6 +46,14 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Cidade} />
+                
+                <Stack.Screen name="Contato" options={{
+                    headerShown: true,
+                    title: 'Contato',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Contato} />
 
                 <Stack.Screen name="Historia" options={{
                     headerShown: true,
