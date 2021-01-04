@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     title:{
         color:'#4A0201',
         fontWeight:'400',
+        textAlign:'center',
         fontSize: width*0.045,
         padding: 10
     },

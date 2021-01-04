@@ -98,6 +98,9 @@ const styles = StyleSheet.create({
     textBolinas: {
         width: '30%',
         textAlign: 'center',
+        textAlignVertical:'top',
+        
+
         color: '#707070',
         fontFamily: 'Poppins-Regular',
         fontSize: width * 0.045

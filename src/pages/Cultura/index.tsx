@@ -48,7 +48,7 @@ const Cultura: React.FC = () => {
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={{...styles.wellTRext, textAlign:'justify'}}>
-                    Olá ! Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
+                    Olá! Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
@@ -69,12 +69,13 @@ const Cultura: React.FC = () => {
                         </View>
                         <View style={{padding: 10}}/>
                         <View style={styles.roWNOmesBolina}>
-                            <Text numberOfLines={2} style={styles.textBolinas}>
+                            <Text numberOfLines={1} style={[styles.textBolinas]}>
                                 Caboclinhos
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Heroínas de
                                 tejucupapo
+
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Aparauá

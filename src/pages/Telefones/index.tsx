@@ -46,7 +46,7 @@ const Telefones: React.FC = () => {
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>
-                    Olá ! Aqui você encontra os melhores locais e serviços de nossa cidade.
+                    Olá! Aqui você encontra os melhores locais e serviços de nossa cidade.
                     </Text>
                 </View>
                 <View style={styles.cilindro}>

@@ -20,11 +20,11 @@ const Guias: React.FC = () => {
                         <Text numberOfLines={1} style={styles.itemTextTitle}>{item.title}</Text>
                         <Text lineBreakMode='tail' style={styles.itemText}>{item.description}</Text>
                     </View>
-                    <View style={styles.endViewItem}>
+                    {/* <View style={styles.endViewItem}>
                         <View style={styles.arrowDia}>
                             <FastImage source={DiaLogo} resizeMode={FastImage.resizeMode.contain} style={styles.itemDia} />
                         </View>
-                    </View>
+                    </View> */}
                 </View>
             </View>
         )
