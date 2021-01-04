@@ -47,5 +47,18 @@ const styles = StyleSheet.create({
     separate: {
         padding: 10
     },
+    vermais:{
+        width:'40%',
+        height: width*0.09,
+        borderRadius: width*0.04,
+        backgroundColor:'#4A0201',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    textVermais:{
+        color:'white',
+        fontSize: width*0.045,
+        textAlign:'center'
+    }
 });
 export default styles;

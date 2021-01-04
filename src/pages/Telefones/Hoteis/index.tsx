@@ -26,7 +26,7 @@ const Hoteis: React.FC = () => {
                     <FastImage source={item.image} resizeMode={FastImage.resizeMode.contain} style={styles.itemIMG} />
                     <View style={styles.columnTextView}>
                         <Text numberOfLines={1} style={styles.itemTextTitle}>{item.title}</Text>
-                        <Text lineBreakMode='tail' style={styles.itemText}>{item.description}</Text>
+                        <Text lineBreakMode='tail' numberOfLines={6}  style={styles.itemText}>{item.description}</Text>
                     </View>
                     <View style={styles.endViewItem}>
                         <View style={styles.arrowDia}>

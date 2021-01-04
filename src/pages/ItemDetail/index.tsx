@@ -4,6 +4,8 @@ import FastImage from 'react-native-fast-image'
 import {
     View,
     ScrollView,
+    TouchableOpacity,
+    Linking,
     Text,
 } from 'react-native';
 interface Props {
@@ -12,6 +14,7 @@ interface Props {
             title: string;
             description: string;
             image: any;
+            url: string;
         }
     }
 }
@@ -25,7 +28,11 @@ const ItemDetail: React.FC<Props> = ({ route }) => {
                     <Text style={styles.textTitle}>{route.params.title}</Text>
                     <Text style={styles.text}>{route.params.description}</Text>
                     <View style={styles.separate} />
+                    <TouchableOpacity activeOpacity={0.7} onPress={()=>  Linking.openURL(route.params.url)} style={styles.vermais}>
+                        <Text style={styles.textVermais}>Ver Mais</Text>
+                    </TouchableOpacity>
                 </View>
+           
                 <View style={{ ...styles.separate, height: 200 }} />
             </ScrollView>
         </>
