@@ -26,6 +26,7 @@ import Religioso from '../pages/Cultura/Religioso';
 import Rural from '../pages/Cultura/Rural';
 import Praia from '../pages/Cultura/Praia';
 import Contato from '../pages/Contato'
+import Term from '../pages/Term';
 const Stack = createStackNavigator();
 const Router: React.FC = () => {
 
@@ -46,7 +47,15 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Cidade} />
-                
+
+                <Stack.Screen name="Term" options={{
+                    headerShown: true,
+                    title: 'Nosso objetivo',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Term} />
+
                 <Stack.Screen name="Contato" options={{
                     headerShown: true,
                     title: 'Contato',

@@ -52,7 +52,7 @@ const Cultura: React.FC = () => {
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
-                    <Text style={styles.textCilindro}>Olá, Conheça Goiania!</Text>
+                    <Text style={styles.textCilindro}>Olá, Conheça Goiana!</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>

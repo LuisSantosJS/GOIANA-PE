@@ -6,7 +6,7 @@ import {
     TouchableOpacity
 } from 'react-native'
 import styles from './styles'
-import { Reglisgi, Religi } from '../../../mocks/Religioso'
+import { Rura, Rurals } from '../../../mocks/rural'
 import FastImage from 'react-native-fast-image'
 import { useNavigation } from '@react-navigation/native';
 const Rural: React.FC = () => {
@@ -16,7 +16,7 @@ const Rural: React.FC = () => {
         navigation.navigate('WebViewPage', { url: url })
     }
 
-    const _renderItem = (item: Reglisgi, index: number) => {
+    const _renderItem = (item: Rura, index: number) => {
         if (String(item.description).length === 0) {
             return (
                 <>
@@ -53,12 +53,12 @@ const Rural: React.FC = () => {
             <View style={styles.container}>
                 <FlatList
                     style={{ flex: 1 }}
-                    data={Religi}
+                    data={Rurals}
                     keyExtractor={(item) => String(item.title)}
                     renderItem={({ item, index }: any) => _renderItem(item, index)}
                 />
             </View>
-    
+
         </>
     )
 }

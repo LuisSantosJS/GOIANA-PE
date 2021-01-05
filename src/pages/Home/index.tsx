@@ -10,6 +10,8 @@ import { useNavigation } from '@react-navigation/native'
 //@ts-ignore
 import IconInfo from '../../assets/reclamar.png'
 import FastImage from 'react-native-fast-image'
+//@ts-ignore
+import Term from '../../assets/term.png'
 
 //@ts-ignore
 import Logo from '../../assets/logo.png'
@@ -47,6 +49,9 @@ const Home: React.FC = () => {
             <View style={styles.minBorder} />
             <TouchableOpacity activeOpacity={0.7} onPress={()=> navigation.navigate('Contato')} style={styles.floats}>
                 <FastImage source={IconInfo} resizeMode={FastImage.resizeMode.contain} style={styles.info} />
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7} onPress={()=> navigation.navigate('Term')} style={styles.floats0}>
+                <FastImage source={Term} resizeMode={FastImage.resizeMode.contain} style={styles.info} />
             </TouchableOpacity>
         </>
     )

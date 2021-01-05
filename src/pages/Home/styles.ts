@@ -78,6 +78,18 @@ const styles = StyleSheet.create({
         justifyContent:'center'
         
     },
+    floats0: {
+        position: 'absolute',
+        top: width * 0.07+ getStatusBarHeight(true),
+        backgroundColor:'#4A0201',
+        width: width*0.1,
+        height: width*0.1,
+        borderRadius: width*0.05,
+        left: width*0.045,
+        alignItems:'center',
+        justifyContent:'center'
+        
+    },
     info:{
         width:'50%',
         height: '50%'

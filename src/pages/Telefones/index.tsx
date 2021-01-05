@@ -82,7 +82,7 @@ const Telefones: React.FC = () => {
                             <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={Delivery} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Guias')} style={[styles.bolinhas, styles.sombra]}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={TelefoneLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                             <View style={{ ...styles.bolinhas, borderWidth: 0 }} />
