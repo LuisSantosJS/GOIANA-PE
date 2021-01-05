@@ -22,9 +22,9 @@ const Demografia: React.FC = () => {
                 <Text style={styles.text}>Segundo o Censo do IBGE Sua população estimada era de 79 758 habitantes e a sede municipal se situa a treze metros de altitude. Seu centro histórico foi declarado Patrimônio Histórico Nacional no ano de 1938.</Text>
                 <View style={styles.separate} />
                 <View style={styles.separate} />
-                <TouchableOpacity onPress={handleWebView} activeOpacity={0.7} style={styles.mais}>
+                {/* <TouchableOpacity onPress={handleWebView} activeOpacity={0.7} style={styles.mais}>
                     <Text style={styles.textSub}>Ver Mais</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 <View style={styles.separate} />
                 <View style={styles.separate} />
 

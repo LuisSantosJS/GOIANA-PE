@@ -7,7 +7,7 @@ interface Props {
     route: { params: { url: string } }
 }
 const WebViewPage: React.FC<Props> = (props) => {
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = useState<boolean>(true)
     return (
         <>
             <View style={styles.container} >

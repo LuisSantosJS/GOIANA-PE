@@ -44,10 +44,10 @@ const Cidade: React.FC = () => {
                         <View style={styles.separate} />
 
                     </View>
-
+{/* 
                     <TouchableOpacity onPress={handleWebView} activeOpacity={0.7} style={styles.mais}>
                         <Text style={styles.textSub}>Ver Mais</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                     <View style={styles.separate} />
                     <View style={styles.separate} />
                 </View>
