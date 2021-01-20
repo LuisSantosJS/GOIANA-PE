@@ -26,7 +26,7 @@ const Cidade: React.FC = () => {
                         <Text style={styles.textBold}>Localização do Município:</Text>
                         <Text style={styles.text}>Mesorregião Mata Pernambucana; Microrregião Mata Norte Pernambucana </Text>
                         <View style={styles.separate} />
-                        <Text style={styles.text}> <Text style={styles.textBold}>Distância do Recife:</Text> 62 km</Text>
+                        <Text style={styles.text}> <Text style={styles.textBold}>Distância do João Pessoa:</Text> 59 km</Text>
                         <View style={styles.separate} />
                         <Text style={styles.text}> <Text style={styles.textBold}>Rodovias de Acesso ao Município:</Text> BR-101 Norte</Text>
                         <View style={styles.separate} />

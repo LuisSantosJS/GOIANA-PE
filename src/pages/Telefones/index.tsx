@@ -24,29 +24,27 @@ import LancheLogo from '../../assets/lanche.png'
 //@ts-ignore
 import EatLogo from '../../assets/eat.png'
 //@ts-ignore
-import Logo from '../../assets/logo.png'
+import Fundo from '../../assets/fundo.png'
 //@ts-ignore
 import Chapeu from '../../assets/chapeu.png'
 const Telefones: React.FC = () => {
     const navigation = useNavigation();
-    const handleBack = () =>{
+    const handleBack = () => {
         navigation.goBack();
     }
 
-    const notAction = () =>{
+    const notAction = () => {
         Toast.showWithGravity('Funcionalidade indisponível', Toast.LONG, Toast.TOP);
     }
     return (
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <FastImage source={Logo} resizeMode={FastImage.resizeMode.contain} style={styles.logo} />
-                </View>
+                <FastImage source={Fundo} resizeMode={FastImage.resizeMode.contain} style={styles.header} />
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>
-                    Olá! Aqui você encontra os melhores locais e serviços de nossa cidade.
+                        Olá! Aqui você encontra os melhores locais e serviços de nossa cidade.
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
@@ -65,9 +63,9 @@ const Telefones: React.FC = () => {
                                 <FastImage source={LancheLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
-                        <View style={{padding: 10}}/>
+                        <View style={{ padding: 10 }} />
                         <View style={styles.roWNOmesBolina}>
-                            <Text  numberOfLines={2} style={styles.textBolinas}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
                                 Hotéis
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>
@@ -88,7 +86,7 @@ const Telefones: React.FC = () => {
                             <View style={{ ...styles.bolinhas, borderWidth: 0 }} />
 
                         </View>
-                        <View style={{padding: 10}}/>
+                        <View style={{ padding: 10 }} />
                         <View style={{ ...styles.roWNOmesBolina }}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Delivery
@@ -98,8 +96,8 @@ const Telefones: React.FC = () => {
                             </Text>
                             <Text style={styles.textBolinas} />
                         </View>
-                        <View style={{padding: 10}}/>
-                        <View style={{padding: 10}}/>
+                        <View style={{ padding: 10 }} />
+                        <View style={{ padding: 10 }} />
                     </View>
                 </ScrollView>
             </View>

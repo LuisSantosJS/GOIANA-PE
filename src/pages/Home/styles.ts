@@ -20,9 +20,16 @@ const styles = StyleSheet.create({
         width: width * 0.5,
         height: width * 0.5,
     },
+    header: {
+        minWidth: width * (width*0.3),
+        height: width * 0.5,
+        backgroundColor: '#4A0201',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     bannerCenter: {
         width: width,
-        height: width * 0.3,
+        height: width * 0.2,
         backgroundColor: '#4A0201',
         alignItems: 'center',
         justifyContent: 'center'

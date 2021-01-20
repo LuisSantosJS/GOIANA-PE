@@ -30,9 +30,11 @@ import TurismoRuralLogo from '../../assets/Trural.png'
 //@ts-ignore
 import PraiaLogo from '../../assets/praia.png'
 //@ts-ignore
-import Logo from '../../assets/logo.png'
+import Fundo from '../../assets/fundo.png'
 //@ts-ignore
 import Chapeu from '../../assets/chapeu.png'
+//@ts-ignore
+import PopularLogo from '../../assets/popular.png'
 const Cultura: React.FC = () => {
     const navigation = useNavigation();
     const handleBack = () => {
@@ -42,13 +44,11 @@ const Cultura: React.FC = () => {
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <FastImage source={Logo} resizeMode={FastImage.resizeMode.contain} style={styles.logo} />
-                </View>
+                <FastImage source={Fundo} resizeMode={FastImage.resizeMode.contain} style={styles.header} />
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
-                    <Text style={{...styles.wellTRext, textAlign:'justify'}}>
-                    <Text style={{fontWeight:'bold'}}>Olá!</Text> Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
+                    <Text style={{ ...styles.wellTRext, textAlign: 'justify' }}>
+                        <Text style={{ fontWeight: 'bold' }}>Olá!</Text> Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
@@ -67,7 +67,7 @@ const Cultura: React.FC = () => {
                                 <FastImage source={AparaLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
-                        <View style={{padding: 10}}/>
+                        <View style={{ padding: 10 }} />
                         <View style={styles.roWNOmesBolina}>
                             <Text numberOfLines={1} style={[styles.textBolinas]}>
                                 Caboclinhos
@@ -93,7 +93,7 @@ const Cultura: React.FC = () => {
                                 <FastImage source={TurismoRuralLogo} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                         </View>
-                        <View style={{padding: 10}}/>
+                        <View style={{ padding: 10 }} />
                         <View style={styles.roWNOmesBolina}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Curica
@@ -117,10 +117,12 @@ const Cultura: React.FC = () => {
                             <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Artesao')} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={ArteLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <View style={{ ...styles.bolinhas, borderWidth: 0 }} />
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Popular')} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={PopularLogo} style={[styles.bolinhasIMages0]} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
 
                         </View>
-                        <View style={{padding: 10}}/>
+                        <View style={{ padding: 10 }} />
                         <View style={styles.roWNOmesBolina}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Praias
@@ -129,11 +131,14 @@ const Cultura: React.FC = () => {
                                 Artesãos
                                 goianenses
                             </Text>
-                            <Text style={styles.textBolinas} />
+                            <Text numberOfLines={2} style={styles.textBolinas}>
+                                Cultura
+                                Popular
+                            </Text>
                         </View>
                     </View>
-                    <View style={{padding: 10}}/>
-                    <View style={{padding: 10}}/>
+                    <View style={{ padding: 10 }} />
+                    <View style={{ padding: 10 }} />
                 </ScrollView>
             </View>
             <View style={styles.minBorder} />

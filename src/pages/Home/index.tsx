@@ -14,7 +14,7 @@ import FastImage from 'react-native-fast-image'
 import Term from '../../assets/term.png'
 
 //@ts-ignore
-import Logo from '../../assets/logo.png'
+import Fundo from '../../assets/fundo.png'
 const Home: React.FC = () => {
     const navigation = useNavigation();
     return (
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
             <View style={styles.minBorder} />
             <View style={styles.container}>
-                <FastImage source={Logo} resizeMode={FastImage.resizeMode.contain} style={styles.logo} />
+            <FastImage source={Fundo} resizeMode={FastImage.resizeMode.contain} style={styles.header} />
                 <View style={styles.bannerCenter}>
                     <Text style={styles.textBanner}>
                         O SEU PORTAL DO TURISMO

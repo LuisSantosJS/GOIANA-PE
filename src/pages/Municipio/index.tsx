@@ -24,7 +24,7 @@ import GeoLogo from '../../assets/geo.png'
 //@ts-ignore
 import HistoriaLogo from '../../assets/historia.png'
 //@ts-ignore
-import Logo from '../../assets/logo.png'
+import Fundo from '../../assets/fundo.png'
 //@ts-ignore
 import Chapeu from '../../assets/chapeu.png'
 const Municipio: React.FC = () => {
@@ -36,9 +36,7 @@ const Municipio: React.FC = () => {
         <>
             <View style={{ width: '100%', height: getStatusBarHeight(true), backgroundColor: '#4A0201' }} />
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <FastImage source={Logo} resizeMode={FastImage.resizeMode.contain} style={styles.logo} />
-                </View>
+            <FastImage source={Fundo} resizeMode={FastImage.resizeMode.contain} style={styles.header} />
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>

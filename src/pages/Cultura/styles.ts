@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     header: {
-        width: width,
+        minWidth: width * (width*0.1),
         height: width * 0.35,
         backgroundColor: '#4A0201',
         alignItems: 'center',
