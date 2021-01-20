@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         width: '70%',
         padding: 10,
         textAlign: 'justify',
-        fontWeight: '700',
+        fontWeight: '400',
         fontSize: width * 0.045,
         color: '#707070'
 

@@ -22,7 +22,7 @@ const Geografia: React.FC = () => {
             <ScrollView style={{ backgroundColor: '#FFFFFF' }} showsVerticalScrollIndicator={false}>
                 <View style={styles.container}>
                     <FastImage source={Geos} resizeMode={FastImage.resizeMode.contain} style={styles.banner} />
-                    <Text style={styles.text}>Goiânia é capital do estado de Goiás. Possui uma área aproximada de 728 km² e em 2018 apresentava uma população de 1.516.113 milhões de pessoas, segundo informações do Instituto Mauro Borges (IMB). A 210 km de distância de Brasília, capital federal, a cidade é o centro da Região Metropolitana de Goiânia (RMG), composta por 20 municípios e com 2,2 milhões de habitantes, tornando a RMG a décima região metropolitana mais populosa do país. O habitante que ali nasceu é denominado goianiense.</Text>
+                    <Text style={styles.text}>O município de Goiana está localizado na Bacia hidrográfica do Rio Goiana, possui poucas montanhas, possui diversas praias e seu clima é tropical. De acordo com a divisão regional vigente desde 2017, instituída pelo IBGE, o município pertence às Regiões Geográficas Intermediária do Recife e Imediata de Goiana-Timbaúba. Até então, com a vigência das divisões em microrregiões e mesorregiões, fazia parte da microrregião da Mata Setentrional Pernambucana, que por sua vez estava incluída na mesorregião da Mata Pernambucana.</Text>
                     <View style={styles.separate} />
                     {/* <RectButton onPress={handleWebView} activeOpacity={0.7} style={styles.mais}>
                         <Text style={styles.textSub}>Ver Mais</Text>

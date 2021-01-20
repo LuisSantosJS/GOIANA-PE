@@ -48,11 +48,11 @@ const Cultura: React.FC = () => {
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={{...styles.wellTRext, textAlign:'justify'}}>
-                    Olá! Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
+                    <Text style={{fontWeight:'bold'}}>Olá!</Text> Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
-                    <Text style={styles.textCilindro}>Olá, Conheça Goiana!</Text>
+                    <Text style={styles.textCilindro}>Conheça Goiana!</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>

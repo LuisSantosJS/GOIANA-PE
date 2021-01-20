@@ -33,16 +33,16 @@ const Home: React.FC = () => {
                 <View style={styles.viewrest}>
                     <Text style={styles.textWellcome}>
                         Olá, seja bem vindo(a), o que
-                        você deseja explorar em goiana?
+                        você deseja explorar em Goiana?
                     </Text>
                     <TouchableOpacity onPress={() => navigation.navigate('Municipio')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Município</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Cultura')} activeOpacity={0.7} style={styles.buttons}>
-                        <Text style={styles.textButtons}>Turismo e Cultura</Text>
+                        <Text style={styles.textButtons}>Cultura e Turismo</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Telefones')} activeOpacity={0.7} style={styles.buttons}>
-                        <Text style={styles.textButtons}>Telefones</Text>
+                        <Text style={styles.textButtons}>Guia de Serviços</Text>
                     </TouchableOpacity>
                 </View>
             </View>

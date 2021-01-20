@@ -85,6 +85,21 @@ const GuiaMocks: Guia[] = [
         description: 'Av. Nunes Machado, 9 - Centro, Goiana - PE, 55900-000',
         image: require('../../assets/guia/pro.png')
     },
+    {
+        title: 'POLICIA CIVIL',
+        description: 'R. do Jiló - Vila Jardim Pompeia, Goiana - PE, 55900-000',
+        image: require('../../assets/guia/pl.png')
+    },
+    {
+        title: 'BOMBEIROS'        ,
+        description: 'Rua Poço do Rei, s/n, Centro, Goiana - PE, 55900-000',
+        image: require('../../assets/guia/bom.png')
+    },
+    {
+        title: 'DISK DENUNCIA        ',
+        description: '181',
+        image: require('../../assets/guia/181.png')
+    },
 
 
 ]

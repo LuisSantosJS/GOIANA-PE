@@ -42,7 +42,7 @@ const Municipio: React.FC = () => {
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>
-                        Olá, seja bem vindo ao nosso
+                        Olá, seja bem vindo(a) ao nosso
                         portal de turismo <Text style={{ color: '#191919' }}>Goianense</Text>.
                     </Text>
                 </View>
