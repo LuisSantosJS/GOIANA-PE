@@ -24,6 +24,7 @@ const Praia: React.FC = () => {
                         <View style={styles.asfeview}>
                             <FastImage source={item.image} resizeMode={FastImage.resizeMode.contain} style={styles.banner} />
                             <Text style={styles.title}>{item.title}</Text>
+                            <Text numberOfLines={1} lineBreakMode='tail' style={styles.address}>{item.address}</Text>
                         </View>
                     </View>
                 </>
@@ -36,6 +37,7 @@ const Praia: React.FC = () => {
                         <FastImage source={item.image} resizeMode={FastImage.resizeMode.contain} style={styles.banner} />
                         <Text style={styles.title}>{item.title}</Text>
                         <Text lineBreakMode='tail' style={styles.desc}>{item.description}</Text>
+                        <Text numberOfLines={1} lineBreakMode='tail' style={styles.address}>{item.address}</Text>
                     </View>
                 </View>
             </>

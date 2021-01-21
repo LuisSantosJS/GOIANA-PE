@@ -41,7 +41,7 @@ const Municipio: React.FC = () => {
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>
                         Olá, seja bem vindo(a) ao nosso
-                        portal de turismo <Text style={{ color: '#191919' }}>Goianense</Text>.
+                        portal de turismo e cultura<Text style={{ color: '#191919' }}>Goianense</Text>.
                     </Text>
                 </View>
                 <View style={styles.cilindro}>

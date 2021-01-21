@@ -55,6 +55,15 @@ const styles = StyleSheet.create({
         padding: 4,
         height: '25%'
     },
+    address:{
+        color:'#707070',
+        fontWeight:'400',
+        fontSize: width*0.045,
+        textAlign:'justify',
+        width:'90%',
+        padding: 4,
+        height: '10%'
+    },
     mais: {
         width: width * 0.4,
         height: width * 0.1,
