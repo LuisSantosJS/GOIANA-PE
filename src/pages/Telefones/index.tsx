@@ -15,7 +15,11 @@ import Arrow from '../../assets/arrow.png'
 //@ts-ignore
 import HoteisLogo from '../../assets/hoteis.png'
 //@ts-ignore
-import TelefoneLogo from '../../assets/telefone.png'
+import Saude from '../../assets/saude.png'
+//@ts-ignore
+import Praias from '../../assets/praia.png'
+//@ts-ignore
+import Carro from '../../assets/carro.png'
 //@ts-ignore
 import Delivery from '../../assets/delivery.png'
 
@@ -81,9 +85,11 @@ const Telefones: React.FC = () => {
                                 <FastImage source={Delivery} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                             <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
-                                <FastImage source={TelefoneLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
+                                <FastImage source={Saude} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <View style={{ ...styles.bolinhas, borderWidth: 0 }} />
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Carro} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
 
                         </View>
                         <View style={{ padding: 10 }} />
@@ -92,9 +98,30 @@ const Telefones: React.FC = () => {
                                 Delivery
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>
-                                Guia de Serviço
+                                Saúde
                             </Text>
-                            <Text style={styles.textBolinas} />
+                            <Text numberOfLines={2} style={styles.textBolinas}>
+                                Mobilidade
+                                urbana
+                            </Text>
+                        </View>
+
+
+
+                        <View style={styles.rowBolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={()=> navigation.navigate('Praia')} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Praias} style={[styles.bolinhasIMages0,{width:'100%', height: '100%'}]} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
+                            <View style={[styles.bolinhas, styles.sombra, { borderWidth: 0 }]} />
+                            <View style={[styles.bolinhas, styles.sombra, { borderWidth: 0 }]} />
+                        </View>
+                        <View style={{ padding: 10 }} />
+                        <View style={{ ...styles.roWNOmesBolina }}>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
+                                Praias
+                            </Text>
+                            <Text numberOfLines={2} style={styles.textBolinas} />
+                            <Text numberOfLines={2} style={styles.textBolinas} />
                         </View>
                         <View style={{ padding: 10 }} />
                         <View style={{ padding: 10 }} />

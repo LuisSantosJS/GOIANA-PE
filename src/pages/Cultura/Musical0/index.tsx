@@ -10,7 +10,7 @@ import FastImage from 'react-native-fast-image'
 import { useNavigation } from '@react-navigation/native'
 //@ts-ignore
 import Hero from '../../../assets/musical/musical.png'
-const Musical: React.FC = () => {
+const Musical0: React.FC = () => {
     const navigation = useNavigation()
 
     const handleWebView = () => {
@@ -21,12 +21,12 @@ const Musical: React.FC = () => {
             <ScrollView style={{ backgroundColor: '#FFFFFF' }} showsVerticalScrollIndicator={false}>
                 <View style={styles.container}>
                     <FastImage source={Hero} resizeMode={FastImage.resizeMode.contain} style={styles.banner} />
-                    <Text style={styles.text}>Banda Musical Curica fundada em 08 de setembro de 1848, por José Conrado de Souza Nunes, seu primeiro mestre, filho de portugueses, teve como finalidade principal abrilhantar as festas religiosas da paróquia de Goiana – Pernambuco, primando, também, pelas músicas marciais.</Text>
+                    <Text style={styles.text}>Fundada no dia 25 de novembro de 1849, em Goiana, Pernambuco, a banda de música Saboeira era filiada ao Partido Liberal, enquanto a sua rival Curica pertencia ao Partido Conservador.</Text>
                     <View style={styles.separate} />
-                    <Text style={styles.text}> Na época do Imperador D. PEDRO II (06-12-1859) passou a integrar a GUARDA NACIONAL, fazendo as honras da Corte, fato que consolidou a cultura do município de Goiana – Pernambuco.</Text>
+                    <Text style={styles.text}>Há duas versões para a origem do nome: a primeira diz que, como no início a banda não tinha fardamento próprio, os músicos tinham que lavar sua melhor roupa para se apresentar e por isso os adversários os chamavam de "saboeiros", referindo-se ao sabão com que lavavam as roupas. </Text>
                     <View style={styles.separate} />
 
-         
+
                     <View style={styles.separate} />
                     <View style={styles.separate} />
 
@@ -36,4 +36,4 @@ const Musical: React.FC = () => {
         </>
     )
 }
-export default Musical;
+export default Musical0;

@@ -16,7 +16,7 @@ import CablocoLogo from '../../assets/cabloco.png'
 //@ts-ignore
 import HeroiLogo from '../../assets/heroi.png'
 //@ts-ignore
-import CuricaLogo from '../../assets/saxo.png'
+import CuricaLogo from '../../assets/aa.png'
 //@ts-ignore
 import PoliLogo from '../../assets/poli.png'
 //@ts-ignore
@@ -28,7 +28,7 @@ import TurismoLogo from '../../assets/turismo.png'
 //@ts-ignore
 import TurismoRuralLogo from '../../assets/Trural.png'
 //@ts-ignore
-import PraiaLogo from '../../assets/praia.png'
+import Curica from '../../assets/curica.png'
 //@ts-ignore
 import Fundo from '../../assets/fundo.png'
 //@ts-ignore
@@ -96,8 +96,8 @@ const Cultura: React.FC = () => {
                         <View style={{ padding: 10 }} />
                         <View style={styles.roWNOmesBolina}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
+                                Banda Musical
                                 Curica
-                                saboeira
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Turismo
@@ -111,8 +111,8 @@ const Cultura: React.FC = () => {
                         </View>
 
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Praia')} style={[styles.bolinhas, styles.sombra]}>
-                                <FastImage source={PraiaLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Musical0')} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Curica} style={styles.bolinhasIMages0} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
                             <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Artesao')} style={[styles.bolinhas, styles.sombra]}>
                                 <FastImage source={ArteLogo} style={styles.bolinhasIMages} resizeMode={FastImage.resizeMode.contain} />
@@ -125,7 +125,8 @@ const Cultura: React.FC = () => {
                         <View style={{ padding: 10 }} />
                         <View style={styles.roWNOmesBolina}>
                             <Text numberOfLines={2} style={styles.textBolinas}>
-                                Praias
+                                Banda Musical
+                                Saboeira
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas}>
                                 Artesãos

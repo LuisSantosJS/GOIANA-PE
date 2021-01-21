@@ -27,6 +27,8 @@ import Rural from '../pages/Cultura/Rural';
 import Praia from '../pages/Cultura/Praia';
 import Contato from '../pages/Contato'
 import Term from '../pages/Term';
+import Musical0 from '../pages/Cultura/Musical0';
+import Popular from '../pages/Cultura/Popular';
 const Stack = createStackNavigator();
 const Router: React.FC = () => {
 
@@ -39,6 +41,7 @@ const Router: React.FC = () => {
                 <Stack.Screen name="Home" component={Home} />
 
                 <Stack.Screen name="Municipio" component={Municipio} />
+                <Stack.Screen name="Popular" component={Popular} />
 
                 <Stack.Screen name="Cidade" options={{
                     headerShown: true,
@@ -129,6 +132,15 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Musical} />
+
+
+                <Stack.Screen name="Musical0" options={{
+                    headerShown: true,
+                    title: 'Sociedade Musical Saboeira',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Musical0} />
 
                 <Stack.Screen name="Aparaua" options={{
                     headerShown: true,
