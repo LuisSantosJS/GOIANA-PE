@@ -47,7 +47,7 @@ const Cultura: React.FC = () => {
                 <FastImage source={Fundo} resizeMode={FastImage.resizeMode.contain} style={styles.header} />
                 <View style={styles.rowWellView}>
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
-                    <Text style={{ ...styles.wellTRext, textAlign: 'justify' }}>
+                    <Text style={{ ...styles.wellTRext }}>
                         <Text style={{ fontWeight: 'bold' }}>Olá!</Text> Conheça um pouco mais da nossa cultura e nossos atrativos turísticos
                     </Text>
                 </View>

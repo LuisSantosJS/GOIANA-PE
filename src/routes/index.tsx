@@ -28,7 +28,14 @@ import Praia from '../pages/Cultura/Praia';
 import Contato from '../pages/Contato'
 import Term from '../pages/Term';
 import Musical0 from '../pages/Cultura/Musical0';
+import Roteiros from '../pages/Roteiros'
 import Popular from '../pages/Cultura/Popular';
+import Congo from '../pages/Roteiros/Congo';
+import Burras from '../pages/Roteiros/Burrinhas';
+import Clube from '../pages/Roteiros/Clube';
+import Ursos from '../pages/Roteiros/Ursos';
+import Sergio from '../pages/Roteiros/Sergio';
+import Morto from '../pages/Roteiros/Morto';
 const Stack = createStackNavigator();
 const Router: React.FC = () => {
 
@@ -42,6 +49,8 @@ const Router: React.FC = () => {
 
                 <Stack.Screen name="Municipio" component={Municipio} />
                 <Stack.Screen name="Popular" component={Popular} />
+
+                <Stack.Screen name="Roteiros" component={Roteiros} />
 
                 <Stack.Screen name="Cidade" options={{
                     headerShown: true,
@@ -217,6 +226,57 @@ const Router: React.FC = () => {
                     headerStyle: { backgroundColor: '#4A0201' },
                     headerTitleStyle: { color: 'white' }
                 }} component={Guias} />
+
+                <Stack.Screen name="Congo" options={{
+                    headerShown: true,
+                    title: 'Pretinhas do Congo',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Congo} />
+
+                <Stack.Screen name="Burras" options={{
+                    headerShown: true,
+                    title: 'Burrinhas',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Burras} />
+
+                <Stack.Screen name="Clube" options={{
+                    headerShown: true,
+                    title: 'Clube carnavalesco MISTO lenhador',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Clube} />
+
+                <Stack.Screen name="Ursos" options={{
+                    headerShown: true,
+                    title: 'Ursos',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Ursos} />
+
+
+                <Stack.Screen name="Sergio" options={{
+                    headerShown: true,
+                    title: 'Serginho da burra',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Sergio} />
+
+
+                <Stack.Screen name="Morto" options={{
+                    headerShown: true,
+                    title: 'Morto carregando vivo',
+                    headerBackTitleVisible: false,
+                    headerStyle: { backgroundColor: '#4A0201' },
+                    headerTitleStyle: { color: 'white' }
+                }} component={Morto} />
+
 
             </Stack.Navigator>
         </NavigationContainer>

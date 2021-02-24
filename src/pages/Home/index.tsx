@@ -41,6 +41,9 @@ const Home: React.FC = () => {
                     <TouchableOpacity onPress={() => navigation.navigate('Cultura')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Cultura e Turismo</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Roteiros')} activeOpacity={0.7} style={styles.buttons}>
+                        <Text style={styles.textButtons}>Roteiros Turísticos</Text>
+                    </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Telefones')} activeOpacity={0.7} style={styles.buttons}>
                         <Text style={styles.textButtons}>Guia de Serviços</Text>
                     </TouchableOpacity>

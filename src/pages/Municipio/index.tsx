@@ -41,11 +41,11 @@ const Municipio: React.FC = () => {
                     <FastImage source={Chapeu} style={styles.chapeu} resizeMode={FastImage.resizeMode.contain} />
                     <Text style={styles.wellTRext}>
                         Olá, seja bem vindo(a) ao nosso
-                        portal de turismo e cultura<Text style={{ color: '#191919' }}>Goianense</Text>.
+                        portal de turismo e cultura<Text style={{ color: '#191919' }}> Goianense</Text>.
                     </Text>
                 </View>
                 <View style={styles.cilindro}>
-                    <Text style={styles.textCilindro}>Conheça mais sobre nosso município.</Text>
+                    <Text style={styles.textCilindro}>Conheça mais sobre nosso município</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>

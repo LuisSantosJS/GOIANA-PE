@@ -15,9 +15,17 @@ import Arrow from '../../assets/arrow.png'
 //@ts-ignore
 import HoteisLogo from '../../assets/hoteis.png'
 //@ts-ignore
+import Make from '../../assets/make.png'
+//@ts-ignore
+import Animal from '../../assets/animal.png'
+//@ts-ignore
 import Saude from '../../assets/saude.png'
 //@ts-ignore
 import Praias from '../../assets/praia.png'
+//@ts-ignore
+import Auto from '../../assets/auto.png'
+//@ts-ignore
+import Auto2 from '../../assets/auto2.png'
 //@ts-ignore
 import Carro from '../../assets/carro.png'
 //@ts-ignore
@@ -109,20 +117,52 @@ const Telefones: React.FC = () => {
 
 
                         <View style={styles.rowBolinhas}>
-                            <TouchableOpacity activeOpacity={0.7} onPress={()=> navigation.navigate('Praia')} style={[styles.bolinhas, styles.sombra]}>
-                                <FastImage source={Praias} style={[styles.bolinhasIMages0,{width:'100%', height: '100%'}]} resizeMode={FastImage.resizeMode.contain} />
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Auto} style={[styles.bolinhasIMages,]} resizeMode={FastImage.resizeMode.contain} />
                             </TouchableOpacity>
-                            <View style={[styles.bolinhas, styles.sombra, { borderWidth: 0 }]} />
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Auto2} style={[styles.bolinhasIMages]} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Praia')} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Praias} style={[styles.bolinhasIMages0, { width: '100%', height: '100%' }]} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={{ padding: 10 }} />
+                        <View style={{ ...styles.roWNOmesBolina }}>
+                            <Text numberOfLines={2} style={styles.textBolinas} >
+                                Serviço
+                                automotivo
+                            </Text>
+                            <Text numberOfLines={2} style={styles.textBolinas} >
+                                Táxi e Mototaxi
+                            </Text>
+                            <Text numberOfLines={2} style={styles.textBolinas}>
+                                Praias
+                            </Text>
+                        </View>
+
+
+                        <View style={styles.rowBolinhas}>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Make} style={[styles.bolinhasIMages,]} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.7} onPress={notAction} style={[styles.bolinhas, styles.sombra]}>
+                                <FastImage source={Animal} style={[styles.bolinhasIMages,]} resizeMode={FastImage.resizeMode.contain} />
+                            </TouchableOpacity>
                             <View style={[styles.bolinhas, styles.sombra, { borderWidth: 0 }]} />
                         </View>
                         <View style={{ padding: 10 }} />
                         <View style={{ ...styles.roWNOmesBolina }}>
-                            <Text numberOfLines={2} style={styles.textBolinas}>
-                                Praias
+                            <Text numberOfLines={2} style={styles.textBolinas} >
+                                Beleza e Cuidados Pessoais
+                            </Text>
+                            <Text numberOfLines={2} style={styles.textBolinas} >
+                                Saúde Animal
                             </Text>
                             <Text numberOfLines={2} style={styles.textBolinas} />
-                            <Text numberOfLines={2} style={styles.textBolinas} />
                         </View>
+
+
                         <View style={{ padding: 10 }} />
                         <View style={{ padding: 10 }} />
                     </View>
